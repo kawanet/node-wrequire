@@ -11,5 +11,5 @@ try {
 _window = _window || {};
 
 module.exports = function(key, path) {
-  return _window[key] || require(path);
+  return _window[key] || path && require(path);
 };
