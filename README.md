@@ -19,9 +19,15 @@ var _ = window._ || require('underscore');
 var async = window.async || require('async');
 ```
 
-`window` object is not available on node.js, however.
+However, `window` object is not available on node.js environment.
 `require()` function is not available on most web browser environments, either.
 `wrequire()` makes your library ready for both node.js and browsers via [browserify](http://browserify.org/) etc.
+
+## Installation
+
+```sh
+npm install wrequire
+```
 
 ## Author
 
