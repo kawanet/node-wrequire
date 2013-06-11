@@ -1,0 +1,14 @@
+{
+  "name": "wrequire",
+  "version": "0.0.1",
+  "description": "require an external module when window.shortcut is unavailable",
+  "main": "wrequire.js",
+  "repository": "https://github.com/kawanet/wrequire.git",
+  "keywords": [
+    "window",
+    "require",
+    "browserify"
+  ],
+  "author": "@kawanet",
+  "license": "MIT"
+}
