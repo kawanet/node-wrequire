@@ -1,15 +1,11 @@
 /*! wrequire.js */
 
-var _window;
+module.exports = wrequire;
 
-try {
-  _window = window; // running on browser
-} catch (err) {
-  // running on node.js
+function wrequire(key, path) {
+  if (typeof window !== 'undefined' && window[key]) {
+    return window[key]; // running on browser
+  } else if (typeof require !== 'undefined') {
+    return require(path); // running on node.js
+  }
 }
-
-_window = _window || {};
-
-module.exports = function(key, path) {
-  return _window[key] || path && require(path);
-};
